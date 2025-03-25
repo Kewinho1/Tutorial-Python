@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">Estrutura de dados</title>
+</head>
+<body>
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#IF">Exemplo de IF</a></li>
+                <li><a href="#Else">Exemplo de Else</a></li>
+                <li><a href="#Elif">Exemplo de Elif</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 id="titulo">Estrutura de dados </h1>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao tutorial de Estrutura de dados! A estrutura de decisão é oque permite fazermos escolhas de que caminho o código irá seguir enquanto roda, com isso podemos fazer contenção de erros, Executar código com base em uma condição, Usar operadores lógicos, alguns exemplos de estrutura de decisão são IF, ELSE, ELIF.</p>
+        </section>
+        <section id="IF">
+            <h2>IF</h2>
+            <p>Exemplo de
+                If:
+                
+                idade = int(input('Digite sua idade: '))
+                
+                if idade >= 18:
+                    print('tem idade pra ser preso')</p>
+
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/d7171c8bb5c9 '" !> Testar Código</button>
+
+        </section>
+        <section id="Else">
+            <h2>Else</h2>
+            <p>Exemplo de Else:<br>
+
+                numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]<br>
+                procurado = int(input('Digite um número para procurar na lista: '))<br><br>
+                
+                for num in numeros:
+                    if num == procurado:
+                        print('Número encontrado!')
+                        break
+                else:
+                    print('Número não está na lista.')</p>
+
+                    <button class="btn" onclick="location.href = 'https://trinket.io/python/c183b013d46e '" !> Testar Código</button>
+
+        </section>
+        <section id="Elif">
+            <h2>Elif</h2>
+            <p>Exemplo de Elif:<br><br>
+
+                nota = float(input('Digite sua nota: '))<br><br>
+                
+                if nota >= 90:
+                    print('A')
+                elif nota >= 80:
+                    print('B')
+                elif nota >= 70:
+                    print('C')
+                else:
+                    print('Reprovado')</p>
+
+                    <button class="btn" onclick="location.href = 'https://trinket.io/python/be1bcb8dc3a9 '" !> Testar Código</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
