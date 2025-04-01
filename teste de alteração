@@ -1,0 +1,23 @@
+texte de auteração para o site 
+<h1>Bem-vindo ao Tutorial de Estruturas de Decisão!</h1>
+
+    <p>Você já imaginou como os programas "escolhem" o que fazer em diferentes situações? As <strong>estruturas de decisão</strong> são responsáveis por isso! Elas permitem que o código siga diferentes caminhos com base em condições específicas.</p>
+
+    <p>Com elas, podemos:</p>
+    <ul>
+        <li>✅ <strong>Evitar erros</strong> antes que aconteçam.</li>
+        <li>✅ <strong>Executar comandos</strong> apenas quando certas condições forem atendidas.</li>
+        <li>✅ <strong>Usar operadores lógicos</strong> para criar regras mais inteligentes.</li>
+    </ul>
+
+    <p>Os principais exemplos de estruturas de decisão são:</p>
+    <ul>
+        <li>🔹 <strong>IF</strong> – Executa um bloco de código se uma condição for verdadeira.</li>
+        <li>🔹 <strong>ELSE</strong> – Define o que fazer quando a condição do IF não for atendida.</li>
+        <li>🔹 <strong>ELIF</strong> – Permite adicionar mais de uma condição para um mesmo bloco de código.</li>
+    </ul>
+
+    <p>Com essas ferramentas, você pode tornar seus programas muito mais dinâmicos e eficientes! Vamos explorar isso juntos? 🚀</p>
+
+
+
