@@ -1,4 +1,3 @@
-texte de auteração para o site 
 <h1>Bem-vindo ao Tutorial de Estruturas de Decisão!</h1>
 
     <p>Você já imaginou como os programas "escolhem" o que fazer em diferentes situações? As <strong>estruturas de decisão</strong> são responsáveis por isso! Elas permitem que o código siga diferentes caminhos com base em condições específicas.</p>
@@ -17,7 +16,54 @@ texte de auteração para o site
         <li>🔹 <strong>ELIF</strong> – Permite adicionar mais de uma condição para um mesmo bloco de código.</li>
     </ul>
 
-    <p>Com essas ferramentas, você pode tornar seus programas muito mais dinâmicos e eficientes! Vamos explorar isso juntos? 🚀</p>
+    <section id="IF">
+        <h2>IF</h2>
+        <p>Exemplo de IF:</p>
+        <pre>
+idade = int(input('Digite sua idade: '))
+
+if idade >= 18:
+    print('Tem idade para ser preso')
+        </pre>
+        <button class="btn" onclick="location.href='https://trinket.io/python/d7171c8bb5c9'">Testar Código</button>
+    </section>
+
+    <section id="Else">
+        <h2>Else</h2>
+        <p>Exemplo de Else:</p>
+        <pre>
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+procurado = int(input('Digite um número para procurar na lista: '))
+
+for num in numeros:
+    if num == procurado:
+        print('Número encontrado!')
+        break
+else:
+    print('Número não está na lista.')
+        </pre>
+        <button class="btn" onclick="location.href='https://trinket.io/python/c183b013d46e'">Testar Código</button>
+    </section>
+
+    <section id="Elif">
+        <h2>Elif</h2>
+        <p>Exemplo de Elif:</p>
+        <pre>
+nota = float(input('Digite sua nota: '))
+
+if nota >= 90:
+    print('A')
+elif nota >= 80:
+    print('B')
+elif nota >= 70:
+    print('C')
+else:
+    print('Reprovado')
+        </pre>
+    </section>
+</body>
+</html>
+
 
 
 
