@@ -9,3 +9,5 @@ Gustavo Brandão Schenkel - 2401391
 Gustavo Mattioli Santana - 2403394
 
 Marcos Farinha Prado - 2403541
+
+Alessandra de Freitas Bichara - 2405879
