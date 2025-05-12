@@ -16,7 +16,7 @@ Este é um site simples de tutoriais de Python, desenvolvido como um trabalho de
 
 ## Como usar
 
-Acesse o main page para navegar pelos tutoriais e selecionar os conceito básico de Python que deseja aprender.
+Instale o zip e acesse o main page para navegar pelos tutoriais e selecionar os conceito básico de Python que deseja aprender.
 
 ## Tecnologias utilizadas
 
