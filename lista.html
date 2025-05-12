@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">Tutorial: Listas em Python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#objetivo">Objetivo 🎯</a></li>
+                <li><a href="#oque">O que São Listas em Python? 🧳</a></li>
+                <li><a href="#criando">1. Criando uma Lista ✍️</a></li>
+                <li><a href="#acessando">2. Acessando Itens de uma Lista 🔍</a></li>
+                <li><a href="#modificando">3. Modificando Itens de uma Lista ✏️</a></li>
+                <li><a href="#adicionando">4. Adicionando Itens a uma Lista ➕</a></li>
+                <li><a href="#removendo">5. Removendo Itens de uma Lista ❌</a></li>
+                <li><a href="#comprimento">6. Comprimento da Lista 📏</a></li>
+                <li><a href="#ordenando">7. Ordenando uma Lista 🔀</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Tutorial: Listas em Python: Como Criar e Manipular Simples 📝🔢</h1>
+
+        <div class="section" id="objetivo">
+            <h2>Objetivo 🎯</h2>
+            <p>Neste tutorial, você aprenderá a criar e manipular listas em Python. Vamos entender como armazenar múltiplos itens em uma lista, acessar esses itens e realizar operações simples, como adicionar, remover e modificar valores. Este é um tutorial essencial para quem deseja entender como trabalhar com coleções de dados em Python.</p>
+        </div>
+
+        <div class="section" id="oque">
+            <h2>O que São Listas em Python? 🧳</h2>
+            <p>Em Python, uma lista é uma coleção ordenada de itens. Você pode armazenar vários tipos de dados em uma lista, como números, strings, ou até outras listas.</p>
+            <p><strong>Exemplo de Lista:</strong></p>
+            <pre>numeros = [1, 2, 3, 4, 5]</pre>
+        </div>
+
+        <div class="section" id="criando">
+            <h2>1. Criando uma Lista ✍️</h2>
+            <pre>frutas = ["maçã", "banana", "laranja"]</pre>
+        </div>
+
+        <div class="section" id="acessando">
+            <h2>2. Acessando Itens de uma Lista 🔍</h2>
+            <pre>frutas = ["maçã", "banana", "laranja"]
+
+# Acessando o primeiro item
+print(frutas[0])  # Resultado: maçã
+
+# Acessando o segundo item
+print(frutas[1])  # Resultado: banana</pre>
+
+            <p><strong>Dica: Índices negativos</strong></p>
+            <pre># Acessando o último item da lista
+print(frutas[-1])  # Resultado: laranja</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/e7f88da6fe22'">Testar Código</button>
+
+        <div class="section" id="modificando">
+            <h2>3. Modificando Itens de uma Lista ✏️</h2>
+            <pre>frutas = ["maçã", "banana", "laranja"]
+
+# Modificando o segundo item
+frutas[1] = "kiwi"
+print(frutas)  # Resultado: ['maçã', 'kiwi', 'laranja']</pre>
+
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/728fd7286b24'">Testar Código</button>
+        </div>
+
+        <div class="section" id="adicionando">
+            <h2>4. Adicionando Itens a uma Lista ➕</h2>
+            <p><strong>Usando append:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja"]
+
+# Adicionando ao final
+frutas.append("manga")
+print(frutas)</pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/c5a062718d56'">Testar Código</button>
+            <p><strong>Usando insert:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja"]
+
+# Inserindo na segunda posição
+frutas.insert(1, "morango")
+print(frutas)</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/b59f4179efaf'">Testar Código</button>
+
+        <div class="section" id="removendo">
+            <h2>5. Removendo Itens de uma Lista ❌</h2>
+            <p><strong>Usando remove:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+frutas.remove("banana")
+print(frutas)</pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/6225b8e92249'">Testar Código</button>
+
+            <p><strong>Usando pop:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+removido = frutas.pop(2)
+print(frutas)
+print("Removido:", removido)</pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/1ab8afc7c840'">Testar Código</button>
+
+            <p><strong>Usando del:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+del frutas[0]
+print(frutas)</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/14e2528fd3bf'">Testar Código</button>
+
+        <div class="section" id="comprimento">
+            <h2>6. Comprimento da Lista 📏</h2>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+comprimento = len(frutas)
+print(comprimento)</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/b864c85b35d4'">Testar Código</button>
+
+        <div class="section" id="ordenando">
+            <h2>7. Ordenando uma Lista 🔀</h2>
+            <p><strong>Usando sort:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+frutas.sort()
+print(frutas)</pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/3d8d7ce66b'">Testar Código</button>
+
+            <p><strong>Usando sorted:</strong></p>
+            <pre>frutas = ["maçã", "banana", "laranja", "kiwi"]
+lista_ordenada = sorted(frutas)
+print(lista_ordenada)</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/d39eec67be61'">Testar Código</button>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

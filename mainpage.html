@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/maincss.css"> <!-- Link to the updated CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title>Tutorial de Python</title>
+</head>
+<body class="body-main">
+
+    <header>
+        <h1>Bem vindo ao curso de python</h1>
+        <h3>"mensagem padrao e generica de boas vindas"</h3>
+    </header>
+
+    <main>
+        <div class="stars"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="button-grid">
+            <button class="div1" onclick="location.href = 'index.html'">Tutorial 1: Estruturas de Decisão</button>
+            <button class="div2" onclick="location.href = 'variaveis.html'">Tutorial 2: Como Trabalhar com Variáveis em Python</button>
+            <button class="div3" onclick="location.href = 'repetição.html'">Tutorial 3: Repetindo Tarefas com For e While em Python</button>
+            <button class="div4" onclick="location.href = 'manipulacao.html'">Tutorial 4: Manipulando Strings em Python - Dicas Rápidas</button>
+            <button class="div5" onclick="location.href = 'lista.html'">Tutorial 5: Listas em Python - Como Criar e Manipular</button>
+            <button class="div6" onclick="location.href = 'tabela.html'">Tutorial 6: Tabelas em Python - Como Criar e Manipular</button>
+            <button class="div7" onclick="location.href = 'hierarquia.html'">Tutorial 7: Como Organizar Sua Hierarquia Passo a Passo</button>
+            <button class="div8" onclick="location.href = 'funcoes.html'">Tutorial 8: funçoes em python</button>
+            <button class="div9" onclick="location.href = 'imports.html'">Tutorial 9: imports em python</button>
+
+        </div>
+    </main>
+
+    <!-- Image Easter Egg Overlay -->
+    <div id="image-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background-color:#000000cc; z-index:10000; justify-content:center; align-items:center; flex-direction: column;">
+        <img src="imgs\easteregg.jpeg" alt="Easter Egg Image" style="max-width:90vw; max-height:80vh; border: 5px solid white; border-radius: 10px;">
+        <button id="close-image" style="margin-top: 20px; font-size:20px; padding:10px; cursor:pointer;">Close</button>
+    </div>
+
+    <script>
+        // Konami code sequence
+        const konamiCode = [38,38,40,40,37,39,37,39,66,65];
+        let konamiIndex = 0;
+
+        document.addEventListener('keydown', function(e) {
+            if(e.keyCode === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                if(konamiIndex === konamiCode.length) {
+                    konamiIndex = 0;
+                    showImage();
+                }
+            } else {
+                konamiIndex = 0;
+            }
+        });
+
+        function showImage() {
+            const overlay = document.getElementById('image-overlay');
+            overlay.style.display = 'flex';
+        }
+
+        function hideImage() {
+            const overlay = document.getElementById('image-overlay');
+            overlay.style.display = 'none';
+        }
+
+        document.getElementById('close-image').addEventListener('click', hideImage);
+    </script>
+
+</body>
+</html>

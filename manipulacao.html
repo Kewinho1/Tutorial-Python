@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">Tutorial: Manipulando Strings em Python - Dicas Rápidas 📝💻</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#objetivo">Objetivo 🎯</a></li>
+                <li><a href="#oque">O que são Strings em Python? 🧵</a></li>
+                <li><a href="#concatenando">1.Concatenando Strings ➕ </a></li>
+                <li><a href="#acessando">2.Acessando Caracteres de uma String 🔍</a></li>
+                <li><a href="#maiusculas">3. Tornando as Strings Maiúsculas e Minúsculas 🔠</a></li>
+                <li><a href="#dividindo">4.  Dividindo uma String com .split() ✂️</a></li>
+                <li><a href="#substituindo">5. Substituindo Texto com .replace() 🔄</a></li>
+                <li><a href="#verificando">6. Verificando a Existência de uma Substring 🔎</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Tutorial: Manipulando Strings em Python - Dicas Rápidas 📝💻</h1>
+
+        <div class="section" id="objetivo">
+            <h2>Objetivo 🎯</h2>
+            <p>Neste tutorial, você aprenderá como manipular strings de forma simples e eficiente em Python. 
+              Vamos explorar como concatenar strings, acessar caracteres específicos, e usar métodos úteis como .upper(), .lower(), .split(), e .replace().
+              Perfeito para quem quer trabalhar com texto em projetos pequenos ou até mesmo para validação de dados!</p>
+        </div>
+
+        <div class="section" id="oque">
+            <h2>O que são Strings em Python? 🧵</h2>
+            <p>Strings em Python são sequências de caracteres (letras, números, símbolos, etc.) que podem ser manipuladas de diversas formas.
+              Elas são criadas com aspas simples ' ' ou duplas " ".</p>
+            <strong>Exemplo:</strong>
+            <pre>
+              # Definindo strings com aspas duplas
+              texto = "Bem-vindo ao curso!"</pre>
+            <p>Aqui, a variável é uma string que contém a frase "Bem-vindo ao curso!".</p>
+        </div>
+
+        <div class="section" id="concatenando">
+            <h2>1.Concatenando Strings ➕ </h2>
+            <p>Concatenar significa juntar duas ou mais strings para formar uma nova.</p>
+            <strong>Exemplo:</strong>
+            <pre>
+              string1 = "Além do"
+              string2 = "Tempo"
+              resultado = string1 + " " + string2
+              print(resultado)</pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/15b5eeca193c'">Testar Código</button><br>
+            <p>Usamos o operador + para juntar as strings "Além do" e "Tempo", com um espaço entre elas.</p>
+        </div>
+
+        <div class="section" id="acessando">
+            <h2>2.Acessando Caracteres de uma String 🔍</h2>
+            <p>Você pode acessar caracteres específicos de uma string usando índices. Os índices começam em 0!</p>
+            <strong>Exemplo:</strong>
+            <pre>string = "Python"
+
+              # Acessa o primeiro caractere
+              primeiro_caractere = string[0]  # Retorna 'P'
+              print(primeiro_caractere)
+          
+              # Acessa o segundo caractere
+              segundo_caractere = string[1]  # Retorna 'y'
+              print(segundo_caractere)</pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/2a456d919e90'">Testar Código</button><br>
+        <br>    <strong>Explicação:</strong>
+            <p>string[0] acessa o primeiro caractere da string, que é P.<br>
+              string[1] acessa o segundo caractere da string, que é y.</p>
+             
+        <br>    <strong>Exemplo de índices negativos:</strong>
+            <pre>
+              # Acessa o último caractere
+              ultimo_caractere = string[-1]  # Retorna 'n'
+              print(ultimo_caractere)
+          
+              # Acessa o penúltimo caractere
+              penultimo_caractere = string[-2]  # Retorna 'o'
+              print(penultimo_caractere)</pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/9c2aa44128fa'">Testar Código</button>
+        </div>
+
+        <div class="section" id="maiusculas">
+            <h2>3. Tornando as Strings Maiúsculas e Minúsculas 🔠</h2>
+            <p>O Python oferece métodos simples para converter strings para maiúsculas ou minúsculas.</p>
+            <strong>Método .upper() - Maiúsculas:</strong>
+            <pre>
+              texto = "Será que o universo é capaz de mudar toda física que eu aprendi?"
+              texto_maiuscula = texto.upper()
+              print(texto_maiuscula) </pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/3d8d7ce66b'">Testar Código</button><br>
+        <br>    <strong>Método .lower() - Minúsculas:</strong>
+            <pre>
+              texto = "Ou será uma falha no tempo que o amor percebeu e veio corrigir?"
+              texto_minuscula= texto.lower()
+              print(texto_minuscula) </pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/80095b356a0f'">Testar Código</button><br>
+        <br>  <strong>Explicação: </strong>
+            <p>.upper() converte todos os caracteres da string para maiúsculas.<br>
+              .lower() converte todos os caracteres para minúsculas.</p>
+        </div>
+
+        <div class="section" id="dividindo">
+            <h2>4.  Dividindo uma String com .split() ✂️</h2>
+            <p>O método .split() permite dividir uma string em várias partes, com base em um separador (por padrão, é o espaço em branco).</p>
+            <p><strong>Exemplo: </strong></p>
+            <pre>
+              texto = "Deixa a chama no seu peito queimar!"
+              palavras = texto.split()
+              print(palavras)</pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/c5a062718d56'">Testar Código</button>
+            <p><strong>Você também pode usar um separador específico:</strong></p>
+            <pre>
+              texto = "Deixa a luz do sol sempre te guiar. Incedeie o seu coração!"
+              palavras = texto.split(".")
+              print(palavras)</pre>
+        </div>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/b59f4179efaf'">Testar Código</button>
+
+        <div class="section" id="substituindo">
+            <h2>5. Substituindo Texto com .replace() 🔄</h2>
+            <p>O método .replace() é útil para substituir uma parte da string por outra.</p>
+            <strong>Usando .replace:</strong>
+            <pre>
+              texto = "Eu gosto de Python"
+              novo_texto = texto.replace("Python", "Java")
+              print(novo_texto) </pre>
+            <p>O .replace() substitui todas as ocorrências da palavra "Python" por "Java" na string original.</p>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/6225b8e92249'">Testar Código</button>
+
+     
+        <div class="section" id="verificando">
+            <h2>6. Verificando a Existência de uma Substring 🔎</h2>
+            <p>Você pode verificar se uma substring (parte de uma string) existe dentro de uma string usando o operador in.</p>
+            <strong>Usando o operador in:</strong>
+            <pre>
+              texto = "Só não abra os olhos e se deixe saber, que é apenas um sonho."
+              substring = "sonho"
+              
+              if substring in texto:
+                  print("A substring 'sonho' está presente no texto")</pre>
+        <button class="btn" onclick="location.href = 'https://trinket.io/python/1ab8afc7c840'">Testar Código</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

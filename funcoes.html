@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    <title id="titulo">Funções em Python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#definindo-funcoes">Definindo Funções</a></li>
+                <li><a href="#parametros-e-retorno">Parâmetros e Retorno</a></li>
+                <li><a href="#chamando-funcoes">Chamando Funções</a></li>
+                <li><a href="#exemplo-completo">Exemplo Completo</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 id="titulo">Funções em Python</h1>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Funções são blocos de código reutilizáveis que realizam uma tarefa específica. Elas ajudam a organizar o código, evitar repetições e facilitar a manutenção.</p>
+            <p>Com funções, podemos:</p>
+            <ul>
+                <li>✅ Reutilizar código facilmente.</li>
+                <li>✅ Dividir o programa em partes menores e mais gerenciáveis.</li>
+                <li>✅ Facilitar a leitura e manutenção do código.</li>
+            </ul>
+        </section>
+
+        <section id="definindo-funcoes">
+            <h2>Definindo Funções</h2>
+            <p>Para definir uma função em Python, usamos a palavra-chave <code>def</code>, seguida do nome da função e parênteses.</p>
+            <pre>
+def saudacao():
+    print("Olá! Bem-vindo ao tutorial de funções.")
+
+# Chamando a função
+saudacao()
+            </pre>
+            <button class="btn" onclick="location.href='https://trinket.io/python/dc18348d6a56'">Testar Código</button>
+        </section>
+
+        <section id="parametros-e-retorno">
+            <h2>Parâmetros e Retorno</h2>
+            <p>Funções podem receber parâmetros para trabalhar com dados de entrada e podem retornar valores usando a palavra-chave <code>return</code>.</p>
+            <pre>
+def soma(a, b):
+return a + b
+            
+resultado = soma(5, 3)
+print"A soma é:",resultado
+            </pre>
+            <button class="btn" onclick="location.href='https://trinket.io/python/c78fff57b2f5'">Testar Código</button>
+        </section>
+
+        <section id="chamando-funcoes">
+            <h2>Chamando Funções</h2>
+            <p>Para executar uma função, basta chamá-la pelo nome seguido de parênteses, passando os argumentos necessários.</p>
+            <pre>
+def saudacao():
+    print("Olá! Bem-vindo ao tutorial de funções.")
+
+def soma(a, b):
+    return a + b
+
+# Chamando as funções
+saudacao()
+print(soma(10, 20))
+            </pre>
+            <button class="btn" onclick="location.href='https://trinket.io/python/a20ea3244e4a'">Testar Código</button>
+        </section>
+
+        <section id="exemplo-completo">
+            <h2>Exemplo Completo</h2>
+            <p>Veja um exemplo completo que utiliza funções para calcular a área de um retângulo:</p>
+            <pre>
+def area_retangulo(largura, altura):
+return largura * altura
+            
+largura = float(input("Digite a largura: "))
+altura = float(input("Digite a altura: "))
+            
+print"A área do retângulo é ",area_retangulo(largura, altura)
+            </pre>
+            <button class="btn" onclick="location.href='https://trinket.io/python/8c38cc3eecf7'">Testar Código</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

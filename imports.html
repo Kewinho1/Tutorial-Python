@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">como usar import no python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#math">import math</a></li>
+                <li><a href="#random">import random</a></li>
+                <li><a href="#time">import time</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 id="titulo">oque é import</h1>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao tutorial import! import é usado no python para adicionarmos bibliotecas ao nosso código, bibliotecas são algoritimos que já foram feitos e podem ser usados em nosso código.</p>
+            
+            Com elas, podemos:
+            </p>
+            <ul>
+                <li>✅ criar codigos mais complexos.</li>
+                <li>✅ adicionar funções não existentes no python.</li>
+                <li>✅ até mesmo conectar nosso codigos importando um para o outro.</li>
+            </ul>
+            <p>como exemplo vamos usar as bibliotecas:</p>
+            <ul>
+                <li><strong>math</strong> – usado para operações complexas de matematica.</li>
+                <li><strong>random</strong> – usado para criar uma pseudo aleatoriedade.</li>
+                <li><strong>time</strong> – Permite usarmos o tempo real no codigo.</li>
+            </ul>
+        </section>
+        
+        <section id="math">
+            <h2>math</h2>
+            <p> <strong>math</strong> vamos usar essa biblioteca para simplificar um calculo e assim agilizar nosso desenvolvimento neste caso vamos fazer a raiz quadrada:</p>
+            <pre>
+import math # aqui estamos importando a biblioteca math
+
+x = math.sqrt(64) # depois de importar a biblioteca, podemos usar suas funções,
+                    nesse caso a raiz quadrada (que é sqrt)
+                
+print(x) # e por fim, vamos printar o resultado
+    
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/54c18102310b'">Testar Código</button>
+        </section>
+
+        <section id="random">
+            <h2>random</h2>
+            <p> <strong>random</strong> é utilizado para criar algo proximo a aleatoriedade, como sabemos o computador não é capaz de fazer algo verdadeiramente aleatorio mas atraves de uma serie de contas matematicas podemos criar algo que parece aleatorio.</p>
+            <pre>
+import random # novamente importamos a biblioteca desejada
+print(random.randint(1, 10)) # ao usarmos a função random estamos chamando a biblioteca 
+                               com isso podemos pedir um numero aleatorio inteiro (randint) entre 1 e 10
+                
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/3bdc0bdf6332'">Testar Código</button>
+        </section>
+
+        <section id="time">
+            <h2>time</h2>
+            <p> <strong>time</strong> essa biblioteca serve para podermos utilizar o tempo no nosso codigo, 
+                                       não so podemos marcar horas mas também podemos fazer outras coisas como definir intervalos de tempo:</p>
+            <pre>
+import time
+
+print("ola.") # aqui estamos apenas imprimindo uma mensagem imediatamente ao rodar o codigo
+time.sleep(2.4) # aqui estamos definindo um intervalo de tempo de 2.4 segundos
+print("mundo.") # e aqui estamos imprimindo outra mensagem apos o intervalo de tempo
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/0702d26c28ab'">Testar Código</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

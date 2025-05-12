@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">Estruturas de Decisão</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">    >
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#IF">Exemplo de IF</a></li>
+                <li><a href="#Else">Exemplo de Else</a></li>
+                <li><a href="#Elif">Exemplo de Elif</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 id="titulo">Estruturas de Decisão</h1>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao tutorial de Estruturas de Decisão! Essas estruturas são fundamentais para que um programa possa tomar decisões durante sua execução. Elas permitem que o código siga diferentes caminhos, dependendo das condições estabelecidas. 
+            
+            Com elas, podemos:
+            </p>
+            <ul>
+                <li>✅ Evitar erros antes que aconteçam.</li>
+                <li>✅ Executar ações com base em condições específicas.</li>
+                <li>✅ Utilizar operadores lógicos para decisões mais avançadas.</li>
+            </ul>
+            <p>As principais estruturas de decisão são:</p>
+            <ul>
+                <li><strong>IF</strong> – Executa um bloco de código se a condição for verdadeira.</li>
+                <li><strong>ELSE</strong> – Executa um bloco de código caso a condição do IF não seja atendida.</li>
+                <li><strong>ELIF</strong> – Permite testar várias condições em sequência.</li>
+            </ul>
+        </section>
+        
+        <section id="IF">
+            <h2>IF</h2>
+            <p>O <strong>IF</strong> permite executar um bloco de código se uma condição for verdadeira. Veja o exemplo abaixo:</p>
+            <pre>
+idade = int(input('Digite sua idade: '))
+
+if idade >= 18:
+    print('Você já é maior de idade!')
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/d7171c8bb5c9'">Testar Código</button>
+        </section>
+
+        <section id="Else">
+            <h2>Else</h2>
+            <p>O <strong>ELSE</strong> é utilizado para definir o que acontece quando a condição do IF não for atendida.</p>
+            <pre>
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+procurado = int(input('Digite um número para procurar na lista: '))
+
+for num in numeros:
+    if num == procurado:
+        print('Número encontrado!')
+        break
+else:
+    print('Número não está na lista.')
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/c183b013d46e'">Testar Código</button>
+        </section>
+
+        <section id="Elif">
+            <h2>Elif</h2>
+            <p>O <strong>ELIF</strong> é usado quando precisamos verificar múltiplas condições em sequência:</p>
+            <pre>
+nota = float(input('Digite sua nota: '))
+
+if nota >= 90:
+    print('A')
+elif nota >= 80:
+    print('B')
+elif nota >= 70:
+    print('C')
+else:
+    print('Reprovado')
+            </pre>
+            <button class="btn" onclick="location.href = 'https://trinket.io/python/be1bcb8dc3a9'">Testar Código</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

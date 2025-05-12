@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title id="titulo">Tutorial: Como Organizar Sua Hierarquia Passo a Passo - Python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#objetivo">Objetivo 🎯</a></li>
+                <li><a href="#o-que-e-hierarquia">O que é Hierarquia de Dados? 🧩</a></li>
+                <li><a href="#listas">1. Usando Listas para Organizar Dados 📋</a></li>
+                <li><a href="#dicionarios">2. Usando Dicionários para Organizar Dados com Chave e Valor 🗂️</a></li>
+                <li><a href="#classes">3. Criando Hierarquias com Classes (OOP – Programação Orientada a Objetos) 🏗️</a></li>
+                <li><a href="#arvores">4. Organizando Hierarquias em Árvores com Recursão 🌳</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1 id="titulo">Tutorial: Como Organizar Sua Hierarquia Passo a Passo - Python</h1>
+
+        <section id="objetivo">
+            <h2>Objetivo 🎯</h2>
+            <p>Neste tutorial, você aprenderá o que é a hierarquia de dados em Python, como usá-la e como organizar informações de maneira eficiente.</p>
+        </section>
+
+        <section id="o-que-e-hierarquia">
+            <h2>O que é Hierarquia de Dados? 🧩</h2>
+            <p>A hierarquia de dados é uma forma de organizar dados em diferentes níveis de importância. Em Python, isso pode ser feito utilizando listas, dicionários e até mesmo classes. A ideia é criar uma estrutura onde certos dados são "mais altos" ou "mais baixos" dentro de uma organização.</p>
+        </section>
+
+        <section id="listas">
+            <h2>1. Usando Listas para Organizar Dados 📋</h2>
+            <p>As listas são a estrutura mais simples para organizar dados sequenciais em Python. Elas podem ser usadas para criar uma "hierarquia" simples, onde os itens têm uma ordem.</p>
+            <strong>Exemplo:</strong>
+            <pre>
+# Lista com uma hierarquia simples
+hierarquia = ['Diretor', 'Gerente', 'Supervisor', 'Funcionário']
+print(hierarquia)
+            </pre>
+            <p>Aqui temos uma lista com os cargos organizados de forma hierárquica, do mais alto (Diretor) para o mais baixo (Funcionário).</p>
+        </section>
+
+        <section id="dicionarios">
+            <h2>2. Usando Dicionários para Organizar Dados com Chave e Valor 🗂️</h2>
+            <p>Dicionários permitem organizar dados mais complexos, associando chaves a valores. Isso é útil quando queremos relacionar cargos a responsabilidades, por exemplo.</p>
+            <strong>Exemplo:</strong>
+            <pre>
+# Dicionário representando uma hierarquia de cargos e responsabilidades
+hierarquia_dicionario = {
+    'Diretor': 'Gerenciar toda a empresa',
+    'Gerente': 'Gerenciar equipes e projetos',
+    'Supervisor': 'Supervisionar funcionários',
+    'Funcionário': 'Executar tarefas diárias'
+}
+
+# Acessando um valor específico
+print(hierarquia_dicionario['Diretor'])
+            </pre>
+            <p>No exemplo acima, temos um dicionário onde cada cargo está associado a uma descrição de responsabilidade.</p>
+        </section>
+
+        <section id="classes">
+            <h2>3. Criando Hierarquias com Classes (OOP – Programação Orientada a Objetos) 🏗️</h2>
+            <p>Se você quiser uma hierarquia mais complexa, pode usar classes. Com isso, podemos definir comportamentos para cada tipo de cargo, por exemplo, e garantir que cada nível da hierarquia tenha funcionalidades específicas.</p>
+            <strong>Exemplo:</strong>
+            <pre>
+class Cargo:
+    def __init__(self, nome, descricao):
+        self.nome = nome
+        self.descricao = descricao
+
+    def mostrar_responsabilidade(self):
+        print(f'{self.nome}: {self.descricao}')
+
+# Criando diferentes cargos
+diretor = Cargo('Diretor', 'Gerenciar toda a empresa')
+gerente = Cargo('Gerente', 'Gerenciar equipes e projetos')
+
+# Mostrando responsabilidades
+diretor.mostrar_responsabilidade()
+gerente.mostrar_responsabilidade()
+            </pre>
+            <p>Aqui, usamos uma classe Cargo para organizar cada cargo de forma estruturada. Cada instância da classe tem um nome e uma descrição, e o método <code>mostrar_responsabilidade()</code> exibe essa informação.</p>
+        </section>
+
+        <section id="arvores">
+            <h2>4. Organizando Hierarquias em Árvores com Recursão 🌳</h2>
+            <p>Às vezes, as hierarquias podem se tornar mais complexas, como em uma árvore. Podemos organizar cargos em uma estrutura de árvore usando listas e recursão.</p>
+            <strong>Exemplo:</strong>
+            <pre>
+# Definindo a hierarquia como uma árvore
+hierarquia_arvore = {
+    'Diretor': {
+        'Gerente': {
+            'Supervisor': {
+                'Funcionário': {}
+            }
+        }
+    }
+}
+
+def mostrar_hierarquia(nivel, dados):
+    for cargo, subordinados in dados.items():
+        print(f'{nivel}{cargo}')
+        if subordinados:
+            mostrar_hierarquia("  " + nivel, subordinados)
+
+# Exibindo a hierarquia
+mostrar_hierarquia('', hierarquia_arvore)
+            </pre>
+            <p>Esse exemplo mostra como podemos estruturar cargos em uma árvore hierárquica e exibi-los de forma recursiva.</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

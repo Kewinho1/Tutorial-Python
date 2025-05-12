@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title>Tutorial de Tabelas com Pandas</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#instalando">📦 1. Instalando o pandas</a></li>
+                <li><a href="#criando">🧱 2. Criando uma Tabela Simples (DataFrame)</a></li>
+                <li><a href="#adicionando">➕ 3. Adicionando e Modificando Colunas</a></li>
+                <li><a href="#filtrando">🔍 4. Filtrando Dados</a></li>
+                <li><a href="#removendo">🧹 5. Removendo Colunas</a></li>
+                <li><a href="#ordenando">📈 6. Ordenando os Dados</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>📊 Tutorial de Tabelas com Pandas</h1>
+        <p>Aprenda a criar e editar tabelas com facilidade no Python</p>
+        <img src="imgs/pip.jpeg" alt="Banner do Tutorial" style="width: 100%; height: auto;">
+
+        <div class="section" id="instalando">
+            <h2>📦 1. Instalando o pandas</h2>
+            <p>Abra o terminal e execute o seguinte comando:</p>
+            <pre>pip install pandas</pre>
+        </div>
+
+        <div class="section" id="criando">
+            <h2>🧱 2. Criando uma Tabela Simples (DataFrame)</h2>
+            <pre>import pandas as pd
+
+dados = {
+    'Nome': ['João', 'Maria', 'Pedro', 'Ana'],
+    'Idade': [28, 22, 35, 24],
+    'Cidade': ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Curitiba']
+}
+
+tabela = pd.DataFrame(dados)
+
+print(tabela)</pre>
+            <p><strong>Resultado:</strong></p>
+            <pre>    Nome  Idade            Cidade
+0   João     28        São Paulo
+1  Maria     22   Rio de Janeiro
+2  Pedro     35  Belo Horizonte
+3    Ana     24          Curitiba</pre>
+        </div>
+
+        <div class="section" id="adicionando">
+            <h2>➕ 3. Adicionando e Modificando Colunas</h2>
+            <pre>tabela['Salário'] = [3000, 3500, 4000, 2500]
+tabela['Idade'] = tabela['Idade'] + 1
+print(tabela)</pre>
+            <p><strong>Resultado:</strong></p>
+            <pre>    Nome  Idade            Cidade  Salário
+0   João     29        São Paulo     3000
+1  Maria     23   Rio de Janeiro     3500
+2  Pedro     36  Belo Horizonte     4000
+3    Ana     25          Curitiba     2500</pre>
+        </div>
+
+        <div class="section" id="filtrando">
+            <h2>🔍 4. Filtrando Dados</h2>
+            <pre>filtro = tabela[tabela['Idade'] > 30]
+print(filtro)</pre>
+            <p><strong>Resultado:</strong></p>
+            <pre>    Nome  Idade            Cidade  Salário
+2  Pedro     36  Belo Horizonte     4000</pre>
+        </div>
+
+        <div class="section" id="removendo">
+            <h2>🧹 5. Removendo Colunas</h2>
+            <pre>tabela = tabela.drop('Salário', axis=1)
+print(tabela)</pre>
+            <p><strong>Resultado:</strong></p>
+            <pre>    Nome  Idade            Cidade
+0   João     29        São Paulo
+1  Maria     23   Rio de Janeiro
+2  Pedro     36  Belo Horizonte
+3    Ana     25          Curitiba</pre>
+        </div>
+
+        <div class="section" id="ordenando">
+            <h2>📈 6. Ordenando os Dados</h2>
+            <pre>tabela = tabela.sort_values(by='Idade')
+print(tabela)</pre>
+            <p><strong>Resultado:</strong></p>
+            <pre>    Nome  Idade            Cidade
+1  Maria     23   Rio de Janeiro
+3    Ana     25          Curitiba
+0   João     29        São Paulo
+2  Pedro     36  Belo Horizonte</pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

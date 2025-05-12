@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title>Tutorial: Como Trabalhar com Variáveis em Python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#objetivo">Objetivo🎯🔍</a></li>
+                <li><a href="#oque">O que são Variáveis em Python?</a></li>
+                <li><a href="#criando">1. Criando Variáveis</a></li>
+                <li><a href="#tipos">2. Tipos de Dados Básicos em Python</a></li>
+                <li><a href="#operacoes">3. Usando Variáveis em Operações</a></li>
+                <li><a href="#alterando">4. Alterando o Valor das Variáveis</a></li>
+                <li><a href="#exibindo">5. Exibindo os Valores das Variáveis</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Tutorial: Como Trabalhar com Variáveis em Python 🐍💡</h1>
+
+        <div class="section" id="objetivo">
+            <h2>Objetivo🎯🔍</h2>
+            <p>
+                Neste tutorial, você aprenderá a criar e usar variáveis em Python. Vamos entender como armazenar dados em variáveis,
+                trabalhar com tipos de dados básicos (como inteiros, strings e floats) e realizar operações simples. Este é um tutorial
+                ideal para quem está começando com Python e quer entender os fundamentos de armazenamento e manipulação de dados.
+            </p>
+        </div>
+
+        <div class="section" id="oque">
+            <h2>O que são Variáveis em Python? </h2>
+            <p>
+                Em Python, variáveis são usadas para armazenar dados temporários. Essas variáveis podem ser utilizadas para armazenar
+                diversos tipos de informações, como números, texto ou até resultados de cálculos.
+            </p>
+            <p>Exemplo simples de variável:</p>
+            <pre><code>nome = "João"
+idade = 25</code></pre>
+            <p>
+                <strong>nome</strong> é uma variável que armazena o valor "João".<br>
+                <strong>idade</strong> é uma variável que armazena o valor 25.
+            </p>
+        </div>
+
+        <div class="section" id="criando">
+            <h2>1. Criando Variáveis </h2>
+            <p>Para criar uma variável em Python, basta escolher um nome para ela e atribuir um valor usando o operador =.</p>
+            <pre><code>nome = "Maria"
+idade = 30
+altura = 1.65</code></pre>
+            <p>
+                <strong>nome</strong> recebe o valor "Maria", uma string.<br>
+                <strong>idade</strong> recebe o valor 30, um inteiro (int).<br>
+                <strong>altura</strong> recebe o valor 1.65, um número de ponto flutuante (float).
+            </p>
+        </div>
+
+        <div class="section" id="tipos">
+            <h2>2. Tipos de Dados Básicos em Python </h2>
+            <ul>
+                <li><strong>Inteiros (int) 💯:</strong> Números inteiros, positivos ou negativos, sem decimais. Exemplos: 5, -10, 200.</li>
+                <li><strong>Strings (str)  💬:</strong> Textos, ou sequências de caracteres, entre aspas. Exemplos: "olá", "Python", "123".</li>
+                <li><strong>Floats (float) 🌊:</strong> Números decimais. Exemplos: 3.14, -0.5, 100.0.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="operacoes">
+            <h2>3. Usando Variáveis em Operações 🔧</h2>
+            <h3>Operações com Inteiros:</h3>
+            <pre><code>numero1 = 10
+numero2 = 5
+
+# Soma
+soma = numero1 + numero2
+print(soma)  # Resultado: 15
+
+# Subtração
+diferenca = numero1 - numero2
+print(diferenca)  # Resultado: 5</code></pre>
+
+            <h3>Operações com Floats:</h3>
+            <pre><code>peso = 70.5
+altura = 1.75
+
+# Cálculo do IMC
+imc = peso / (altura ** 2)
+print(imc)  # Resultado: 23.02 (aproximadamente)</code></pre>
+
+            <h3>Concatenando Strings:</h3>
+            <pre><code>nome = "Maria"
+sobrenome = "Silva"
+
+# Concatenando strings
+nome_completo = nome + " " + sobrenome
+print(nome_completo)  # Resultado: "Maria Silva"</code></pre>
+        </div>
+
+        <div class="section" id="alterando">
+            <h2>4. Alterando o Valor das Variáveis </h2>
+            <pre><code>idade = 25  # Definindo a idade inicialmente
+print(idade)  # Resultado: 25
+
+
+# Alterando o valor da variável idade
+idade = 26
+print(idade)  # Resultado: 26</code></pre>
+        </div>
+
+        <div class="section" id="exibindo">
+            <h2>5. Exibindo os Valores das Variáveis </h2>
+            <pre><code>nome = "Pedro"
+idade = 20
+
+# Exibindo os valores das variáveis
+print("Nome:", nome)
+print("Idade:", idade)</code></pre>
+        </div>
+
+        <p><strong>📊Resultado:</strong></p>
+        <pre><code>Nome: Pedro
+Idade: 20</code></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

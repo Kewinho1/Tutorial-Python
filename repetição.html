@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">   
+    <title>Tutorial: Repetindo Tarefas com For e While em Python</title>
+</head>
+<body style="background-image: url('imgs/fundo2.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0;">
+
+    <div class="sidebar">
+        <button class="btn" onclick="toggleMenu()">Tópicos</button>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="#objetivo">Objetivo 🎯</a></li>
+                <li><a href="#oque">O que são Laços de Repetição? 🔄</a></li>
+                <li><a href="#for">1. Laço <code>for</code> - Para Iterar sobre Sequências 🔢</a></li>
+                <li><a href="#range">2. Laço <code>for</code> com <code>range()</code> - Repetições Numéricas 🔢</a></li>
+                <li><a href="#while">3. Laço <code>while</code> - Repetição até uma Condição ⏳</a></li>
+                <li><a href="#forif">4. Laço <code>for</code> com Condições e <code>if</code> ⚙️</a></li>
+                <li><a href="#break">5. Controle de Fluxo: <code>break</code> e <code>continue</code> ⚡</a></li>
+                <li><a href="#nested">6. Laços Aninhados 🐣</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Tutorial: Repetindo Tarefas com For e While em Python 🔁🐍</h1>
+
+        <div class="section" id="objetivo">
+            <h2>Objetivo 🎯</h2>
+            <p>Neste tutorial, você aprenderá a usar os laços de repetição em Python: <code>for</code> e <code>while</code>. Vamos entender como criar loops para iterar sobre listas, usar <code>range()</code> e até fazer repetições até que uma condição seja atendida. Esse é um conceito fundamental em programação para automatizar tarefas repetitivas!</p>
+        </div>
+
+        <div class="section" id="oque">
+            <h2>O que são Laços de Repetição? 🔄</h2>
+            <p>Permitem executar uma parte do código várias vezes sem repeti-lo manualmente. Os principais laços em Python são <code>for</code> e <code>while</code>.</p>
+        </div>
+
+        <div class="section" id="for">
+            <h2>1. Laço <code>for</code> - Para Iterar sobre Sequências 🔢</h2>
+            <pre><code>frutas = ["maçã", "banana", "laranja"]
+
+for fruta in frutas:
+    print(fruta)</code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>maçã
+banana
+laranja</code></pre>
+        </div>
+
+        <div class="section" id="range">
+            <h2>2. Laço <code>for</code> com <code>range()</code> - Repetições Numéricas 🔢</h2>
+            <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>1
+2
+3
+4
+5</code></pre>
+        </div>
+        <button class="btn" onclick="location.href='https://trinket.io/python/182ba2e4c87e'">Testar código</button>
+
+        <div class="section" id="while">
+            <h2>3. Laço <code>while</code> - Repetição até uma Condição ⏳</h2>
+            <pre><code>contador = 1
+
+while contador <= 5:
+    print(contador)
+    contador += 1</code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>1
+2
+3
+4
+5</code></pre>
+        </div>
+
+        <div class="section" id="forif">
+            <h2>4. Laço <code>for</code> com Condições e <code>if</code> ⚙️</h2>
+            <pre><code>frutas = ["maçã", "banana", "laranja", "kiwi"]
+
+for fruta in frutas:
+    if fruta == "banana":
+        print("Encontramos uma banana!")
+    else:
+        print("Outra fruta:", fruta)</code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>Outra fruta: maçã
+Encontramos uma banana!
+Outra fruta: laranja
+Outra fruta: kiwi</code></pre>
+        </div>
+
+        <div class="section" id="break">
+            <h2>5. Controle de Fluxo: <code>break</code> e <code>continue</code> ⚡</h2>
+            <p><strong>Exemplo com <code>break</code>:</strong></p>
+            <pre><code>for i in range(1, 10):
+    if i == 6:
+        print("Número 6 encontrado! Parando o loop.")
+        break
+    print(i)</code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>1
+2
+3
+4
+5
+Número 6 encontrado! Parando o loop.</code></pre>
+        </div>
+
+        <div class="section" id="nested">
+            <h2>6. Laços Aninhados 🐣</h2>
+            <pre><code>for i in range(1, 4):
+    for j in range(1, 3):
+        print("i = {}, j = {}".format(i, j))
+        </code></pre>
+            <p><strong>Saída:</strong></p>
+            <pre><code>i = 1, j = 1
+i = 1, j = 2
+i = 2, j = 1
+i = 2, j = 2
+i = 3, j = 1
+i = 3, j = 2</code></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
